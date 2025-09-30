@@ -4,20 +4,161 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device=width, initial-scale=1.0">
         <title>Resume</title>
-        <link rel="stylesheet" href="./Styles/styles.css">
+        <style>
+            html {
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 550;
+    
+}
+
+body {
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.logo {
+    height: 9vmin;
+    border-radius: 12px;
+}
+
+.hcontainer {
+    display: grid;
+    position: sticky;
+    margin-top: 0;
+    background-color: rgb(115, 0, 160);
+    grid-template-rows: 1fr;
+    grid-template-columns: 0.4fr 3fr 2fr;
+    gap: 2%;
+    height: 13vmin;
+    justify-content: center;
+    align-items: center;
+}
+.hcol3 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8%;
+    margin-right: 8vmin;
+    font-size: 2.7vmin;
+}
+.hcol1 {
+    margin-left: 7vmin;
+}
+.hcol2 {
+    color: white;
+    font-size: 2.7vmin;
+}
+.hcol3 > a {
+    padding: 8px;
+    border-radius: 7px;
+    background-color: blueviolet;
+
+}
+.hcol3 > a:hover {
+    color: rgb(123, 0, 134);
+}
+
+.button1:hover {
+    color: rgb(123, 0, 134);
+}
+
+
+.linkmargin, .linkb {
+    text-decoration: none; /* Optional: Clean up link styling */
+    color: white; /* Optional: Ensure links are visible on dark background */
+}
+.main {
+    background-image: url("../../sunset.jpg");
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    height: 87vmin;
+}
+
+.maindiv {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 4fr 4fr 4fr;
+    gap: 10px;
+    width: 94%;
+    height: 72vh;
+    justify-items: center;
+    align-items: center;
+    margin-left: 3%;
+    margin-right: 3%;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.maindiv > div {
+    width: 27vw;
+    height: 65%;
+    background-color: rgba(209, 114, 221, 0.911);
+    padding: 3%;
+    font-size: 0.7rem;
+    align-content: center;
+        border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+
+    .main {
+        background-image: url("../../sunset.jpg");
+        background-position: center;
+        background-repeat:no-repeat;
+        background-size: cover;
+        height: max-content;
+        padding-bottom: 5%;
+    }
+    .maindiv {
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        gap: 3%;
+        height: max-content;
+        width: 80%;
+        align-items: center;
+        padding-top: 5%;
+        padding-bottom: 5%;
+        margin: 0 auto;
+    }
+
+    .maindiv > div {
+        width: 100%;
+        height: auto;
+        background-color: rgba(209, 114, 221, 0.911);
+        padding: 3%;
+        font-size: 10px;
+        border-radius: 15px;
+
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+}
+
+        </style>
     </head>
     <body>
         <header>
             <div class="hcontainer">
                 <div class="hcol1">
-                    <img class="logo" src="../icon.png" alt="Portfolio Logo">
+                    <img class="logo" src="./icon.png" alt="Portfolio Logo">
                 </div>
                 <div class="hcol2">
                     <h1>Portfolio</h1>
                 </div>
                 <div class="hcol3">
-                    <a href="../index.html" class="linkmargin">Home</a>
-                    <a href="./Resume/resume.html" class="linkb">Resume</a>
+                    <a href="./index.html" class="linkmargin">Home</a>
+                    <a href="./resume.html" class="linkb">Resume</a>
                 </div>
             </div>
         </header>
@@ -41,7 +182,7 @@
                             <p>Goal: Practicing basic design principles learned in a course.</p>
                         </li>
                         <li>
-                            <h3><a href="../index.html">This sample portfolio</a></h3>
+                            <h3><a href="./index.html">This sample portfolio</a></h3>
                             <p>Goal: Practicing some HTML CSS</p>
                         </li>
                         <li>
