@@ -4,7 +4,171 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portfolio</title>
-        <link rel="stylesheet" href="./style/styles.css">
+        <style>
+            html {
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 550;
+}
+
+body {
+    margin: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.logo {
+    height: 9vmin;
+    border-radius: 12px;
+}
+
+.hcontainer {
+    display: grid;
+    position: sticky;
+    margin-top: 0;
+    background-color: rgb(115, 0, 160);
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 3fr 2fr;
+    gap: 1%;
+    height: 13vmin;
+    justify-content: center;
+    align-items: center;
+}
+.hcol3 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8%;
+    margin-right: 8vmin;
+    font-size: 2.7vmin;
+}
+.hcol1 {
+    margin-left: 7vmin;
+}
+.hcol2 {
+    color: white;
+    font-size: 2.7vmin;
+}
+
+.hcol3 > a {
+    padding: 8px;
+    border-radius: 7px;
+    background-color: blueviolet;
+
+}
+.hcol3 > a:hover {
+    color: rgb(123, 0, 134);
+}
+
+.button1:hover {
+    color: rgb(123, 0, 134);
+}
+
+
+.linkmargin, .linkb {
+    text-decoration: none; /* Optional: Clean up link styling */
+    color: white; /* Optional: Ensure links are visible on dark background */
+}
+
+
+.circle {
+
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 30%;
+    background-color: rgba(205, 130, 255, 0.829);
+    min-height: fit-content;
+    height: 60vh;
+    min-width: auto;
+    width: 40%;
+    padding: 5vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5%;
+    
+}
+
+.button1 {
+    width:fit-content;
+    padding: 7px;
+    border-radius: 10px;
+    border: 0;
+    background-color: blueviolet;
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+
+}
+
+.main {
+    background-image: url("../beach.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 10vh;
+    min-height: fit-content;
+    height: 77vh;
+}
+.compliment, .expl {
+    margin-right: 10px;
+}
+.name {
+    font-size: 3rem;
+}
+footer {
+    margin: 0;
+}
+.fcontainer {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+    height: auto;
+    margin: 0 auto;
+    gap: 3%;
+    background-color: rgba(190, 0, 207, 0.678);
+    padding: 2%;
+}
+.fcontainer > .fcol2 {
+    font-size: 0.5rem;
+    order: 1;
+}
+
+.fcontainer a {
+    color: rgb(103, 0, 124);
+}
+.fcontainer > .fcol3 {
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+
+    .circle {
+        border-radius: 30px;
+        background-color: rgba(205, 130, 255, 0.829);
+        min-height: fit-content;
+        height: auto;
+        min-width: auto;
+        width: 70%;
+        padding: 5vh;
+        display: flex;
+        flex-direction: column;
+        gap: 2.5%;
+        margin: 0 auto 5%;
+        }
+    .name {
+    font-size: 3rem;
+    align-self: center;
+    }
+    .button1 {
+        align-self: center;
+    }
+
+}
+        </style>
         <link rel="icon" href="./icon.png">
     </head>
     <body>
